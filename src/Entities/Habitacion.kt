@@ -8,6 +8,6 @@ class Habitacion(
 ) {
 
     fun getDatosHabitacion(): String {
-        return "Número de habitación: $numeroHabitacion Precio por noche: $precioPorNoche Capacidad : $capacidad Disponible: ${if (estaDisponible) "Sí" else "No"}"
+        return "Número de habitación: $numeroHabitacion, Precio por noche: $precioPorNoche , Capacidad : $capacidad, Disponible: ${if (estaDisponible) "Sí" else "No"}"
     }
 }

@@ -12,7 +12,7 @@ class Cliente(
 ) {
 
     fun getDatosCliente(): String {
-        return "Nombre: $primerApellido $segundoApellido $nombres RFC: $rfc Dirección: $direccion Número Telefónico: $numeroTelefonico Email: $email"
+        return "Nombre: $primerApellido $segundoApellido $nombres, RFC: $rfc, Dirección: $direccion, Número Telefónico: $numeroTelefonico, Email: $email"
     }
 
     fun agregarReserva(reserva: Reservacion) {

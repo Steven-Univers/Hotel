@@ -11,6 +11,7 @@ class AdminController {
 
     fun mostrarMenu() {
         printer.apply {
+            printMsg("\nBienvenido al Hotel California")
             printMsg("\nPor favor, ingrese una de las opciones mostradas")
             printMsg("\n1 - Registrar una habitación")
             printMsg("2 - Registrar un cliente")
@@ -18,6 +19,7 @@ class AdminController {
             printMsg("4 - Mostrar las habitaciones")
             printMsg("5 - Mostrar los clientes registrados")
             printMsg("6 - Mostrar las reservas registradas")
+            printMsg("7 - Salir")
 
             val opcionSeleccionada = readln().toInt()
             validarOpciones(opcionSeleccionada)
@@ -54,6 +56,9 @@ class AdminController {
             6 -> {
                 reservacionesController.mostrarReservas()
                 mostrarMenu()
+            }
+            7 -> {
+                printer.printMsg("Saliendo del programa......")
             }
         }
     }

@@ -25,9 +25,9 @@ class Reservacion(
     fun getTotal(): Double = precioTotal
 
     fun getDatosReserva(): String {
-        return "Nombre cliente ${cliente.getDatosCliente()}" + "Total de noches: $totalNoches" +
-                "Fecha inicio :  $fechaInicio" +
-                "Fecha final :  $fechaFin" +
-                "Total : $precioTotal"
+        return "Nombre cliente ${cliente.getDatosCliente()}, " + "Total de noches: $totalNoches," +
+                "Fecha inicio :  $fechaInicio, " +
+                "Fecha final :  $fechaFin, " +
+                "Total : $precioTotal, "
     }
 }
